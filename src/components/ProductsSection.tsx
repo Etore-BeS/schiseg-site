@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const ProductsSection = () => {
   const productCategories = [
@@ -135,13 +136,45 @@ const ProductsSection = () => {
                     </div>
                   )}
                 </div>
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
-                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Simule e Contrate
-                </Button>
+                {product.title === "Seguro de Veículos" ? (
+                  <Link to="/produtos/veiculos">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
+                ) : product.title === "Seguro de Vida e Família" ? (
+                  <Link to="/produtos/vida">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
+                ) : product.title === "Seguro para Imóveis" ? (
+                  <Link to="/produtos/residencial">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
+                ) : product.title === "Seguros Empresariais" ? (
+                  <Link to="/produtos/empresarial">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
+                ) : product.title === "Saúde e Odontológico" ? (
+                  <Link to="/produtos/saude">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
+                    onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Simule e Contrate
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
