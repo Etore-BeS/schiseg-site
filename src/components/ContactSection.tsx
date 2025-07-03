@@ -4,11 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import locationIcon from "@/assets/location.jpg";
-import phoneIcon from "@/assets/phone.jpg";
-import emailIcon from "@/assets/email.jpg";
-import clockIcon from "@/assets/clock.jpg";
-import whatsappIcon from "@/assets/whatsapp-chat.jpg";
 
 const ContactSection = () => {
   return (
@@ -95,17 +90,13 @@ const ContactSection = () => {
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                  <div className="w-6 h-6 mr-2 rounded overflow-hidden">
-                    <img src={locationIcon} alt="Location" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-2xl mr-2">📍</span>
                   Informações de Contato
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-5 h-5 mt-0.5 rounded overflow-hidden">
-                    <img src={locationIcon} alt="Address" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-xl">🏢</span>
                   <div>
                     <p className="font-medium text-foreground">Endereço</p>
                     <p className="text-muted-foreground">São Paulo - SP</p>
@@ -113,9 +104,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-5 h-5 mt-0.5 rounded overflow-hidden">
-                    <img src={phoneIcon} alt="Phone" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-xl">📞</span>
                   <div>
                     <p className="font-medium text-foreground">Telefone</p>
                     <p className="text-muted-foreground">(11) 99999-9999</p>
@@ -123,9 +112,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-5 h-5 mt-0.5 rounded overflow-hidden">
-                    <img src={emailIcon} alt="Email" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-xl">✉️</span>
                   <div>
                     <p className="font-medium text-foreground">E-mail</p>
                     <p className="text-muted-foreground">contato@schiseg.com.br</p>
@@ -133,9 +120,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-5 h-5 mt-0.5 rounded overflow-hidden">
-                    <img src={clockIcon} alt="Schedule" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-xl">🕐</span>
                   <div>
                     <p className="font-medium text-foreground">Horário de Atendimento</p>
                     <p className="text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
@@ -147,9 +132,7 @@ const ContactSection = () => {
             {/* WhatsApp CTA */}
             <Card className="shadow-card bg-gradient-to-r from-accent-blue to-primary text-white">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-lg overflow-hidden">
-                  <img src={whatsappIcon} alt="WhatsApp" className="w-full h-full object-cover" />
-                </div>
+                <span className="text-4xl mb-4 block">💬</span>
                 <h3 className="text-xl font-bold mb-2">Atendimento WhatsApp</h3>
                 <p className="mb-4 text-white/90">
                   Fale conosco agora mesmo pelo WhatsApp para um atendimento mais rápido

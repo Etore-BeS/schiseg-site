@@ -1,9 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import officeIcon from "@/assets/office-building.jpg";
-import protectionIcon from "@/assets/protection-shield.jpg";
-import financeIcon from "@/assets/money-finance.jpg";
-import eventsIcon from "@/assets/events.jpg";
 
 const ProductsSection = () => {
   const productCategories = [
@@ -38,7 +34,7 @@ const ProductsSection = () => {
     {
       title: "Seguros Empresariais",
       description: "Soluções completas para proteger seu negócio",
-      icon: officeIcon,
+      icon: "🏢",
       products: ["Máquinas e Equipamentos", "Garantia", "Perfumarias", "Concessionárias", "Academias"],
       color: "bg-slate-50 border-slate-200"
     },
@@ -59,14 +55,14 @@ const ProductsSection = () => {
     {
       title: "Seguro de Acidentes Pessoais",
       description: "Proteção contra acidentes do dia a dia",
-      icon: protectionIcon,
+      icon: "🛡️",
       products: ["Individual Prazo Curto", "Plus", "Escolar"],
       color: "bg-orange-50 border-orange-200"
     },
     {
       title: "Previdência",
       description: "Planejamento para o seu futuro financeiro",
-      icon: financeIcon,
+      icon: "💰",
       products: ["Previdência", "Previdência para Crianças"],
       color: "bg-amber-50 border-amber-200"
     },
@@ -115,12 +111,8 @@ const ProductsSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-12 h-12 mx-auto mb-3 rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                  {typeof product.icon === 'string' ? (
-                    <div className="text-3xl flex items-center justify-center h-full">{product.icon}</div>
-                  ) : (
-                    <img src={product.icon} alt={product.title} className="w-full h-full object-cover" />
-                  )}
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {product.icon}
                 </div>
                 <CardTitle className="text-lg font-bold text-foreground mb-2">
                   {product.title}
@@ -175,9 +167,7 @@ const ProductsSection = () => {
               <p className="text-xs text-muted-foreground">Título para Aluguel</p>
             </div>
             <div className="text-center">
-              <div className="w-8 h-8 mx-auto mb-2 rounded overflow-hidden">
-                <img src={eventsIcon} alt="Events" className="w-full h-full object-cover" />
-              </div>
+              <div className="text-3xl mb-2">🎉</div>
               <span className="text-sm font-medium text-foreground">Eventos</span>
               <p className="text-xs text-muted-foreground">Seguro de Eventos</p>
             </div>

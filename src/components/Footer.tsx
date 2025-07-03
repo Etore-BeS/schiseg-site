@@ -1,7 +1,4 @@
 import { Button } from "@/components/ui/button";
-import phoneIcon from "@/assets/phone.jpg";
-import emailIcon from "@/assets/email.jpg";
-import clockIcon from "@/assets/clock.jpg";
 
 const Footer = () => {
   return (
@@ -61,21 +58,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contato</h3>
             <div className="space-y-3 text-sm text-primary-foreground/80">
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 rounded overflow-hidden">
-                  <img src={phoneIcon} alt="Phone" className="w-full h-full object-cover" />
-                </div>
+                <span>📞</span>
                 <span>(11) 99999-9999</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 rounded overflow-hidden">
-                  <img src={emailIcon} alt="Email" className="w-full h-full object-cover" />
-                </div>
+                <span>✉️</span>
                 <span>contato@schiseg.com.br</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 rounded overflow-hidden">
-                  <img src={clockIcon} alt="Schedule" className="w-full h-full object-cover" />
-                </div>
+                <span>🕐</span>
                 <span>Seg-Sex: 8h às 18h</span>
               </div>
             </div>
@@ -88,19 +79,13 @@ const Footer = () => {
                   <span className="text-lg">📘</span>
                 </Button>
                 <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <div className="w-4 h-4 rounded overflow-hidden">
-                    <img src="/placeholder.svg" alt="Social" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-lg">📷</span>
                 </Button>
                 <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <div className="w-4 h-4 rounded overflow-hidden">
-                    <img src="/placeholder.svg" alt="Business" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-lg">💼</span>
                 </Button>
                 <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <div className="w-4 h-4 rounded overflow-hidden">
-                    <img src="/placeholder.svg" alt="Contact" className="w-full h-full object-cover" />
-                  </div>
+                  <span className="text-lg">💬</span>
                 </Button>
               </div>
             </div>
