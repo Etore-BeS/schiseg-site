@@ -47,7 +47,7 @@ const AboutSection = () => {
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               A SCHISEG Assessoria Corretora de Seguros Ltda, registrada e habilitada pela 
-              SUSEP sob nº 05062610551236, atua há mais de 15 anos no mercado de seguros, 
+              SUSEP sob nº 10551236, atua há mais de 15 anos no mercado de seguros, 
               oferecendo assessoria e consultoria personalizada para pessoas e empresas.
             </p>
             
@@ -168,12 +168,12 @@ const AboutSection = () => {
               <div className="text-sm text-muted-foreground">São Paulo</div>
             </div>
             <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
-              <div className="text-primary font-bold text-lg mb-2">CLUB DOS</div>
+              <div className="text-primary font-bold text-lg mb-2">CLUBE DOS</div>
               <div className="text-primary font-bold text-lg mb-2">CORRETORES</div>
               <div className="text-sm text-muted-foreground">São Paulo</div>
             </div>
             <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
-              <div className="text-primary font-bold text-lg mb-2">LION CLUB</div>
+              <div className="text-primary font-bold text-lg mb-2">LIONS CLUB INTERNATIONAL</div>
               <div className="text-primary font-bold text-lg mb-2">CENTRO</div>
               <div className="text-sm text-muted-foreground">São Paulo</div>
             </div>
@@ -190,7 +190,7 @@ const AboutSection = () => {
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl font-bold mb-2">SUSEP</div>
-              <div className="text-white/90">Registrada</div>
+              <div className="text-white/90">Registrada - 10551236</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="text-4xl font-bold mb-2">100%</div>
