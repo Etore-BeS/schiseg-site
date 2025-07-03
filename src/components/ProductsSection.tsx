@@ -11,6 +11,13 @@ const ProductsSection = () => {
       color: "bg-blue-50 border-blue-200"
     },
     {
+      title: "Seguro de Viagem",
+      description: "Proteção completa para suas viagens nacionais e internacionais",
+      icon: "✈️",
+      products: ["Nacional", "Internacional", "Europa", "América do Norte", "Ásia", "Múltiplas Viagens", "Estudante"],
+      color: "bg-sky-50 border-sky-200"
+    },
+    {
       title: "Seguro de Veículos",
       description: "Proteção completa para todos os tipos de veículos",
       icon: "🚗",
