@@ -70,25 +70,6 @@ const Footer = () => {
                 <span>Seg-Sex: 8h às 18h</span>
               </div>
             </div>
-            
-            {/* Social Media */}
-            <div className="space-y-3">
-              <h4 className="font-medium">Redes Sociais</h4>
-              <div className="flex space-x-3">
-                <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <span className="text-lg">📘</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <span className="text-lg">📷</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <span className="text-lg">💼</span>
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-white/20">
-                  <span className="text-lg">💬</span>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
 
