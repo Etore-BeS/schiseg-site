@@ -16,11 +16,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded bg-gradient-primary"></div>
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary">SCHISEG</span>
-            <span className="text-xs text-muted-foreground hidden sm:block">Assessoria Corretora de Seguros</span>
+        <div className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/53da31b1-0bb0-4a6e-8c5c-e32a98977e33.png" 
+            alt="SCHISEG Logo" 
+            className="h-10 w-auto"
+          />
+          <div className="hidden sm:flex flex-col">
+            <span className="text-sm font-medium text-muted-foreground">Assessoria Corretora de Seguros</span>
           </div>
         </div>
 

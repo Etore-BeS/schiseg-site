@@ -19,18 +19,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur-sm mb-6 animate-fade-in">
-            <span className="text-white/90">Mais de 20 anos de experiência</span>
-            <div className="ml-2 h-2 w-2 rounded-full bg-success-green"></div>
+            <span className="text-white/90">Mais de 15 anos de experiência • SUSEP nº 05062610551236</span>
+            <div className="ml-2 h-2 w-2 rounded-full bg-primary-light"></div>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            A nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">transparência</span> e a sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-success-green to-green-300">segurança</span>
+            A nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">transparência</span> e a sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">segurança</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Há mais de duas décadas protegendo você, sua família e seu negócio com assessoria personalizada e total transparência.
+            Há mais de 15 anos protegendo você, sua família e seu negócio com assessoria personalizada e total transparência.
           </p>
 
           {/* CTA Buttons */}
@@ -46,15 +46,15 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-success-green mb-2">20+</div>
+              <div className="text-3xl font-bold text-accent-blue mb-2">15+</div>
               <div className="text-white/80">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-success-green mb-2">SUSEP</div>
+              <div className="text-3xl font-bold text-accent-blue mb-2">SUSEP</div>
               <div className="text-white/80">Registrada e Regulamentada</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-success-green mb-2">24/7</div>
+              <div className="text-3xl font-bold text-accent-blue mb-2">24/7</div>
               <div className="text-white/80">Atendimento Personalizado</div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 left-10 w-2 h-2 bg-white/20 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-success-green/30 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-40 right-20 w-3 h-3 bg-accent-blue/30 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-32 left-20 w-2 h-2 bg-white/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
     </section>

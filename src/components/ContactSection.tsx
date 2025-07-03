@@ -130,14 +130,14 @@ const ContactSection = () => {
             </Card>
 
             {/* WhatsApp CTA */}
-            <Card className="shadow-card bg-gradient-to-r from-success-green to-green-600 text-white">
+            <Card className="shadow-card bg-gradient-to-r from-accent-blue to-primary text-white">
               <CardContent className="p-6 text-center">
                 <span className="text-4xl mb-4 block">💬</span>
                 <h3 className="text-xl font-bold mb-2">Atendimento WhatsApp</h3>
                 <p className="mb-4 text-white/90">
                   Fale conosco agora mesmo pelo WhatsApp para um atendimento mais rápido
                 </p>
-                <Button variant="outline" className="bg-white text-success-green hover:bg-white/90 border-white">
+                <Button variant="outline" className="bg-white text-accent-blue hover:bg-white/90 border-white">
                   Chamar no WhatsApp
                 </Button>
               </CardContent>
@@ -149,19 +149,19 @@ const ContactSection = () => {
                 <h3 className="text-lg font-bold text-foreground mb-4">Nossos Diferenciais</h3>
                 <div className="space-y-3">
                   <div className="flex items-center justify-center space-x-2">
-                    <span className="text-success-green">✓</span>
+                    <span className="text-accent-blue">✓</span>
                     <span className="text-sm text-muted-foreground">Registrada na SUSEP</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <span className="text-success-green">✓</span>
+                    <span className="text-accent-blue">✓</span>
                     <span className="text-sm text-muted-foreground">Atendimento 24/7</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <span className="text-success-green">✓</span>
+                    <span className="text-accent-blue">✓</span>
                     <span className="text-sm text-muted-foreground">Propostas gratuitas</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <span className="text-success-green">✓</span>
+                    <span className="text-accent-blue">✓</span>
                     <span className="text-sm text-muted-foreground">Total transparência</span>
                   </div>
                 </div>

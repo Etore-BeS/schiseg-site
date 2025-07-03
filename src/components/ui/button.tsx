@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // SCHISEG custom variants
         hero: "bg-gradient-primary text-white hover:bg-gradient-to-r hover:from-primary-light hover:to-primary shadow-hero hover:shadow-xl transform hover:-translate-y-1",
-        cta: "bg-accent text-accent-foreground hover:bg-success-green shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold",
+        cta: "bg-accent text-accent-foreground hover:bg-accent-blue shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 font-semibold",
         trust: "bg-trust-blue text-white hover:bg-trust-blue-light border-2 border-transparent hover:border-white/20 shadow-md hover:shadow-lg",
       },
       size: {

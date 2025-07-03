@@ -21,7 +21,7 @@ const AboutSection = () => {
     {
       icon: "📈",
       title: "Excelência",
-      description: "Mais de 20 anos de experiência oferecendo as melhores soluções em seguros"
+      description: "Mais de 15 anos de experiência oferecendo as melhores soluções em seguros"
     }
   ];
 
@@ -36,19 +36,19 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-              Mais de 20 anos protegendo o que importa para você
+              Mais de 15 anos protegendo o que importa para você
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              A SCHISEG Assessoria Corretora de Seguros Ltda é uma empresa sólida e confiável, 
-              registrada na SUSEP e sediada em São Paulo. Nossa expertise abrange todos os ramos 
-              de seguros e benefícios para pessoas físicas e jurídicas.
+              A SCHISEG Assessoria Corretora de Seguros Ltda, registrada e habilitada pela 
+              SUSEP sob nº 05062610551236, atua há mais de 15 anos no mercado de seguros, 
+              oferecendo assessoria e consultoria personalizada para pessoas e empresas.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Nossa filosofia é baseada em assessoria personalizada, ética, transparência e foco 
-              total no cliente. Acreditamos que cada pessoa e empresa tem necessidades únicas, 
-              e trabalhamos para oferecer soluções sob medida.
+              Nossa filosofia é desenvolver produtos e serviços com o melhor custo-benefício, 
+              priorizando o respeito, a lealdade e a tranquilidade dos nossos segurados. 
+              "A nossa transparência e a sua segurança".
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -88,7 +88,7 @@ const AboutSection = () => {
           <h3 className="text-2xl lg:text-3xl font-bold mb-8">Nossa Credibilidade em Números</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-4xl font-bold mb-2">15+</div>
               <div className="text-white/90">Anos no Mercado</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>

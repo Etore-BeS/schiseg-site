@@ -15,12 +15,12 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Assessoria Corretora de Seguros com mais de 20 anos de experiência, 
+              Assessoria Corretora de Seguros com mais de 15 anos de experiência, 
               oferecendo transparência e segurança para você e sua família.
             </p>
             <div className="space-y-2">
               <p className="text-sm">
-                <span className="font-medium">SUSEP:</span> Registrada e Regulamentada
+                <span className="font-medium">SUSEP:</span> nº 05062610551236
               </p>
               <p className="text-sm">
                 <span className="font-medium">Localização:</span> São Paulo - SP

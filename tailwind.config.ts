@@ -58,7 +58,7 @@ export default {
 				'trust-blue': 'hsl(var(--trust-blue))',
 				'trust-blue-light': 'hsl(var(--trust-blue-light))',
 				'security-gray': 'hsl(var(--security-gray))',
-				'success-green': 'hsl(var(--success-green))',
+				'accent-blue': 'hsl(var(--accent-blue))',
 				'warning-orange': 'hsl(var(--warning-orange))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

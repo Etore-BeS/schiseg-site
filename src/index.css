@@ -28,8 +28,8 @@
     --muted: 215 15% 95%;
     --muted-foreground: 215 15% 60%;
 
-    /* Accent: Success Green (CTAs) */
-    --accent: 142 76% 36%;
+    /* Accent: Professional Blue Highlight (no green) */
+    --accent: 217 76% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,7 +43,7 @@
     --trust-blue: 217 76% 35%;
     --trust-blue-light: 217 76% 45%;
     --security-gray: 215 15% 45%;
-    --success-green: 142 76% 36%;
+    --accent-blue: 217 76% 45%;
     --warning-orange: 25 95% 53%;
 
     /* Gradients */
