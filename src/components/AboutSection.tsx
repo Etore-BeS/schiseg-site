@@ -2,26 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import transparencyImage from "@/assets/transparency.jpg";
+import ethicsImage from "@/assets/ethics.jpg";
+import customerFocusImage from "@/assets/customer-focus.jpg";
+import excellenceImage from "@/assets/excellence.jpg";
 
 const AboutSection = () => {
   const values = [
     {
-      icon: "🛡️",
+      icon: transparencyImage,
       title: "Transparência",
       description: "Clareza total em todos os processos, desde a cotação até o atendimento de sinistros"
     },
     {
-      icon: "🤝",
+      icon: ethicsImage,
       title: "Ética",
       description: "Conduta íntegra e responsável em todas as nossas relações comerciais"
     },
     {
-      icon: "🎯",
+      icon: customerFocusImage,
       title: "Foco no Cliente",
       description: "Atendimento personalizado e soluções adequadas às suas necessidades específicas"
     },
     {
-      icon: "📈",
+      icon: excellenceImage,
       title: "Excelência",
       description: "Mais de 15 anos de experiência oferecendo as melhores soluções em seguros"
     }
@@ -80,7 +84,13 @@ const AboutSection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl mb-4">{value.icon}</div>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={value.icon} 
+                      alt={value.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">
                     {value.title}
                   </h3>
