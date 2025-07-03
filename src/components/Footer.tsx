@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-primary-foreground/80">
               <div className="flex items-center space-x-2">
                 <span>📞</span>
-                <span>(11) 99999-9999</span>
+                <span>(11) 2941-2295</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>✉️</span>
