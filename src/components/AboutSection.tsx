@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const AboutSection = () => {
   const values = [
@@ -88,6 +90,83 @@ const AboutSection = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Photo Carousel */}
+        <div className="mt-20">
+          <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-foreground">Nossa Galeria</h3>
+          <Carousel 
+            className="w-full max-w-4xl mx-auto"
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              })
+            ]}
+          >
+            <CarouselContent>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
+                        <span className="text-lg font-semibold text-muted-foreground">Eventos Corporativos</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <div className="w-full h-full bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg flex items-center justify-center">
+                        <span className="text-lg font-semibold text-muted-foreground">Equipe SCHISEG</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
+                        <span className="text-lg font-semibold text-muted-foreground">Premiações</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+
+        {/* Associations Section */}
+        <div className="mt-20 bg-white rounded-2xl p-8 shadow-card">
+          <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-foreground">Corretora Associada</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
+              <div className="text-primary font-bold text-lg mb-2">SINCOR</div>
+              <div className="text-sm text-muted-foreground">São Paulo</div>
+            </div>
+            <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
+              <div className="text-primary font-bold text-lg mb-2">CÂMARA DOS</div>
+              <div className="text-primary font-bold text-lg mb-2">CORRETORES</div>
+              <div className="text-sm text-muted-foreground">São Paulo</div>
+            </div>
+            <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
+              <div className="text-primary font-bold text-lg mb-2">CLUB DOS</div>
+              <div className="text-primary font-bold text-lg mb-2">CORRETORES</div>
+              <div className="text-sm text-muted-foreground">São Paulo</div>
+            </div>
+            <div className="text-center p-4 bg-gradient-subtle rounded-lg hover:shadow-card-hover transition-all duration-300">
+              <div className="text-primary font-bold text-lg mb-2">LION CLUB</div>
+              <div className="text-primary font-bold text-lg mb-2">CENTRO</div>
+              <div className="text-sm text-muted-foreground">São Paulo</div>
+            </div>
           </div>
         </div>
 
