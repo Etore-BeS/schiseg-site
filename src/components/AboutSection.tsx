@@ -119,9 +119,11 @@ const AboutSection = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-video items-center justify-center p-6">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
-                        <span className="text-lg font-semibold text-muted-foreground">Eventos Corporativos</span>
-                      </div>
+                      <img 
+                        src="/lovable-uploads/0d42f8c7-b7e2-4493-919b-cbe6245599ca.png" 
+                        alt="Equipe SCHISEG - Evento Corporativo"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     </CardContent>
                   </Card>
                 </div>
@@ -130,9 +132,11 @@ const AboutSection = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-video items-center justify-center p-6">
-                      <div className="w-full h-full bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg flex items-center justify-center">
-                        <span className="text-lg font-semibold text-muted-foreground">Equipe SCHISEG</span>
-                      </div>
+                      <img 
+                        src="/lovable-uploads/8eb9a095-bc6e-45c8-ae28-730aabc74aa8.png" 
+                        alt="Equipe SCHISEG - Networking"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     </CardContent>
                   </Card>
                 </div>
@@ -141,9 +145,89 @@ const AboutSection = () => {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-video items-center justify-center p-6">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
-                        <span className="text-lg font-semibold text-muted-foreground">Premiações</span>
-                      </div>
+                      <img 
+                        src="/lovable-uploads/058677ee-696f-4c78-bf64-4dfc751a5d92.png" 
+                        alt="Premiação - Câmara dos Corretores"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/dcb8956f-8aa1-4c86-84d5-732cd52c3751.png" 
+                        alt="Evento Mapfre - Câmara dos Corretores"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/1bd68f93-9294-42e4-90cb-98309d81b60c.png" 
+                        alt="Equipe SCHISEG - Confraternização"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/fb6b8004-87fd-4732-b39d-cb18011fd12f.png" 
+                        alt="Evento Corporativo - Equipe Completa"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/be7e2a2d-4908-464e-8298-a9da4ef324f8.png" 
+                        alt="Lideranças SCHISEG"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/6fe2e198-8e4a-4e0d-b877-d15026f6efae.png" 
+                        alt="Diretoria SCHISEG"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-video items-center justify-center p-6">
+                      <img 
+                        src="/lovable-uploads/3d879e67-7a71-48e2-9188-df5ff1dac320.png" 
+                        alt="Reunião de Negócios SCHISEG"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     </CardContent>
                   </Card>
                 </div>
