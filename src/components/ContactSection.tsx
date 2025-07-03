@@ -87,24 +87,39 @@ const ContactSection = () => {
             {/* Trust Indicators */}
             <div className="space-y-6">
               <Card className="shadow-card">
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-lg font-bold text-foreground mb-4">Nossos Diferenciais</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-center space-x-2">
-                      <span className="text-accent-blue">✓</span>
-                      <span className="text-sm text-muted-foreground">Registrada na SUSEP</span>
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold text-foreground flex items-center">
+                    <span className="text-2xl mr-2">✨</span>
+                    Nossos Diferenciais
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-accent-blue text-xl">✓</span>
+                    <div>
+                      <p className="font-medium text-foreground">Registrada na SUSEP</p>
+                      <p className="text-muted-foreground text-sm">Corretora oficial e regulamentada</p>
                     </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <span className="text-accent-blue">✓</span>
-                      <span className="text-sm text-muted-foreground">Atendimento 24/7</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-accent-blue text-xl">✓</span>
+                    <div>
+                      <p className="font-medium text-foreground">Atendimento 24/7</p>
+                      <p className="text-muted-foreground text-sm">Suporte sempre disponível</p>
                     </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <span className="text-accent-blue">✓</span>
-                      <span className="text-sm text-muted-foreground">Propostas gratuitas</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-accent-blue text-xl">✓</span>
+                    <div>
+                      <p className="font-medium text-foreground">Propostas gratuitas</p>
+                      <p className="text-muted-foreground text-sm">Cotações sem compromisso</p>
                     </div>
-                    <div className="flex items-center justify-center space-x-2">
-                      <span className="text-accent-blue">✓</span>
-                      <span className="text-sm text-muted-foreground">Total transparência</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-accent-blue text-xl">✓</span>
+                    <div>
+                      <p className="font-medium text-foreground">Total transparência</p>
+                      <p className="text-muted-foreground text-sm">Condições claras e justas</p>
                     </div>
                   </div>
                 </CardContent>
