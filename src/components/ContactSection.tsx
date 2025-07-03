@@ -4,8 +4,61 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    product: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Solicitação enviada com sucesso!",
+        description: "Entraremos em contato em breve.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        product: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error sending contact form:', error);
+      toast({
+        title: "Erro ao enviar solicitação",
+        description: "Tente novamente ou entre em contato diretamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -21,68 +74,97 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="shadow-card animate-fade-in">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-foreground">
-                Solicite sua Proposta
-              </CardTitle>
-              <p className="text-muted-foreground">
-                Preencha o formulário e receba uma cotação personalizada
-              </p>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nome Completo</Label>
-                  <Input id="name" placeholder="Seu nome completo" />
+          <form onSubmit={handleSubmit}>
+            <Card className="shadow-card animate-fade-in">
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground">
+                  Solicite sua Proposta
+                </CardTitle>
+                <p className="text-muted-foreground">
+                  Preencha o formulário e receba uma cotação personalizada
+                </p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Nome Completo</Label>
+                    <Input 
+                      id="name" 
+                      placeholder="Seu nome completo" 
+                      value={formData.name}
+                      onChange={(e) => handleInputChange("name", e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">E-mail</Label>
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="seu@email.com"
+                      value={formData.email}
+                      onChange={(e) => handleInputChange("email", e.target.value)}
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input id="email" type="email" placeholder="seu@email.com" />
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Telefone</Label>
+                    <Input 
+                      id="phone" 
+                      placeholder="(11) 99999-9999"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="product">Produto de Interesse</Label>
+                    <Select value={formData.product} onValueChange={(value) => handleInputChange("product", value)}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Selecione o produto" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="veiculos">Seguro de Veículos</SelectItem>
+                        <SelectItem value="vida">Seguro de Vida</SelectItem>
+                        <SelectItem value="residencial">Seguro Residencial</SelectItem>
+                        <SelectItem value="empresarial">Seguro Empresarial</SelectItem>
+                        <SelectItem value="saude">Saúde e Odontológico</SelectItem>
+                        <SelectItem value="outros">Outros</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Telefone</Label>
-                  <Input id="phone" placeholder="(11) 99999-9999" />
+                  <Label htmlFor="message">Mensagem</Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Descreva suas necessidades ou tire suas dúvidas..."
+                    className="min-h-[120px]"
+                    value={formData.message}
+                    onChange={(e) => handleInputChange("message", e.target.value)}
+                    required
+                  />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="product">Produto de Interesse</Label>
-                  <Select>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Selecione o produto" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="veiculos">Seguro de Veículos</SelectItem>
-                      <SelectItem value="vida">Seguro de Vida</SelectItem>
-                      <SelectItem value="residencial">Seguro Residencial</SelectItem>
-                      <SelectItem value="empresarial">Seguro Empresarial</SelectItem>
-                      <SelectItem value="saude">Saúde e Odontológico</SelectItem>
-                      <SelectItem value="outros">Outros</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="message">Mensagem</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Descreva suas necessidades ou tire suas dúvidas..."
-                  className="min-h-[120px]"
-                />
-              </div>
-              
-              <Button variant="cta" className="w-full">
-                Enviar Solicitação
-              </Button>
-              
-              <p className="text-xs text-muted-foreground text-center">
-                Ao enviar, você concorda com nossa política de privacidade
-              </p>
-            </CardContent>
-          </Card>
+                
+                <Button 
+                  type="submit" 
+                  variant="cta" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
+                </Button>
+                
+                <p className="text-xs text-muted-foreground text-center">
+                  Ao enviar, você concorda com nossa política de privacidade
+                </p>
+              </CardContent>
+            </Card>
+          </form>
 
           {/* Contact Information */}
           <div className="space-y-6 animate-slide-in-right">
