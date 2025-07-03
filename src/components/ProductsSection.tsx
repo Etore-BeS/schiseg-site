@@ -135,7 +135,11 @@ const ProductsSection = () => {
                     </div>
                   )}
                 </div>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
+                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Simule e Contrate
                 </Button>
               </CardContent>
@@ -168,7 +172,11 @@ const ProductsSection = () => {
               <p className="text-xs text-muted-foreground">Seguro de Eventos</p>
             </div>
           </div>
-          <Button variant="cta" size="lg">
+          <Button 
+            variant="cta" 
+            size="lg"
+            onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Solicitar Proposta Personalizada
           </Button>
         </div>

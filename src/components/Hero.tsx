@@ -35,11 +35,13 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4 h-auto">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="text-lg px-8 py-4 h-auto"
+              onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Solicitar Proposta Gratuita
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white hover:text-primary">
-              Conheça Nossa História
             </Button>
           </div>
 

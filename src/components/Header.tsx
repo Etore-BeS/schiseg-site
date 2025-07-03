@@ -31,7 +31,10 @@ const Header = () => {
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+              <NavigationMenuLink 
+                href="#inicio" 
+                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+              >
                 Início
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -52,19 +55,28 @@ const Header = () => {
                       </a>
                     </NavigationMenuLink>
                   </div>
-                  <NavigationMenuLink href="/produtos/veiculos" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                  <NavigationMenuLink 
+                    href="#produtos" 
+                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
                     <div className="text-sm font-medium leading-none">Veículos</div>
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                       Proteção completa para seu veículo
                     </p>
                   </NavigationMenuLink>
-                  <NavigationMenuLink href="/produtos/vida" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                  <NavigationMenuLink 
+                    href="#produtos" 
+                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
                     <div className="text-sm font-medium leading-none">Vida & Família</div>
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                       Segurança para quem você ama
                     </p>
                   </NavigationMenuLink>
-                  <NavigationMenuLink href="/produtos/empresarial" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                  <NavigationMenuLink 
+                    href="#produtos" 
+                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
                     <div className="text-sm font-medium leading-none">Empresarial</div>
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                       Soluções para seu negócio
@@ -75,13 +87,19 @@ const Header = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/quem-somos" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+              <NavigationMenuLink 
+                href="#sobre" 
+                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+              >
                 Quem Somos
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink href="/contato" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+              <NavigationMenuLink 
+                href="#contato" 
+                className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+              >
                 Contato
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -90,7 +108,11 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="flex items-center space-x-2">
-          <Button variant="cta" className="hidden sm:inline-flex">
+          <Button 
+            variant="cta" 
+            className="hidden sm:inline-flex"
+            onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Solicitar Proposta
           </Button>
           
@@ -112,11 +134,15 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden border-t bg-card">
           <div className="container mx-auto px-4 py-4 space-y-2">
-            <a href="/" className="block py-2 text-sm font-medium hover:text-primary">Início</a>
-            <a href="/produtos" className="block py-2 text-sm font-medium hover:text-primary">Produtos</a>
-            <a href="/quem-somos" className="block py-2 text-sm font-medium hover:text-primary">Quem Somos</a>
-            <a href="/contato" className="block py-2 text-sm font-medium hover:text-primary">Contato</a>
-            <Button variant="cta" className="w-full mt-4">
+            <a href="#inicio" className="block py-2 text-sm font-medium hover:text-primary">Início</a>
+            <a href="#produtos" className="block py-2 text-sm font-medium hover:text-primary">Produtos</a>
+            <a href="#sobre" className="block py-2 text-sm font-medium hover:text-primary">Quem Somos</a>
+            <a href="#contato" className="block py-2 text-sm font-medium hover:text-primary">Contato</a>
+            <Button 
+              variant="cta" 
+              className="w-full mt-4"
+              onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Solicitar Proposta
             </Button>
           </div>

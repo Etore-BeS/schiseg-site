@@ -137,7 +137,11 @@ const ContactSection = () => {
                 <p className="mb-4 text-white/90">
                   Fale conosco agora mesmo pelo WhatsApp para um atendimento mais rápido
                 </p>
-                <Button variant="outline" className="bg-white text-accent-blue hover:bg-white/90 border-white">
+                <Button 
+                  variant="outline" 
+                  className="bg-white text-accent-blue hover:bg-white/90 border-white"
+                  onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                >
                   Chamar no WhatsApp
                 </Button>
               </CardContent>
