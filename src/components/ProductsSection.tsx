@@ -60,13 +60,6 @@ const ProductsSection = () => {
       color: "bg-cyan-50 border-cyan-200"
     },
     {
-      title: "Seguro de Acidentes Pessoais",
-      description: "Proteção contra acidentes do dia a dia",
-      icon: "🛡️",
-      products: ["Individual Prazo Curto", "Plus", "Escolar"],
-      color: "bg-orange-50 border-orange-200"
-    },
-    {
       title: "Previdência",
       description: "Planejamento para o seu futuro financeiro",
       icon: "💰",
