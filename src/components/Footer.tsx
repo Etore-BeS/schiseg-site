@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Shield } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,7 +9,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-white" />
+              <img 
+                src="/lovable-uploads/53da31b1-0bb0-4a6e-8c5c-e32a98977e33.png" 
+                alt="SCHISEG Logo" 
+                className="h-8 w-auto"
+              />
               <div>
                 <span className="text-xl font-bold">SCHISEG</span>
               </div>
