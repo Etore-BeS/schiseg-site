@@ -44,7 +44,7 @@ const ContactSection = () => {
               <Card className="shadow-card">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                    <span className="text-2xl mr-2">📍</span>
+                    <span className="text-2xl mr-2"></span>
                     Informações de Contato
                   </CardTitle>
                 </CardHeader>
@@ -89,7 +89,7 @@ const ContactSection = () => {
               <Card className="shadow-card">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                    <span className="text-2xl mr-2">✨</span>
+                    <span className="text-2xl mr-2"></span>
                     Nossos Diferenciais
                   </CardTitle>
                 </CardHeader>
