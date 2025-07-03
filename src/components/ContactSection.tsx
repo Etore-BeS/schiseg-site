@@ -99,7 +99,7 @@ const ContactSection = () => {
                   <span className="text-xl">🏢</span>
                   <div>
                     <p className="font-medium text-foreground">Endereço</p>
-                    <p className="text-muted-foreground">São Paulo - SP</p>
+                    <p className="text-muted-foreground">Rua Monte Serrat , 588 - São Paulo/SP</p>
                   </div>
                 </div>
                 
@@ -107,7 +107,7 @@ const ContactSection = () => {
                   <span className="text-xl">📞</span>
                   <div>
                     <p className="font-medium text-foreground">Telefone</p>
-                    <p className="text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-muted-foreground">(11) 2941-2295</p>
                   </div>
                 </div>
                 
@@ -115,14 +115,14 @@ const ContactSection = () => {
                   <span className="text-xl">✉️</span>
                   <div>
                     <p className="font-medium text-foreground">E-mail</p>
-                    <p className="text-muted-foreground">contato@schiseg.com.br</p>
+                    <p className="text-muted-foreground">schiseg@schiseg.com.br</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <span className="text-xl">🕐</span>
                   <div>
-                    <p className="font-medium text-foreground">Horário de Atendimento</p>
+                    <p className="font-medium text-foreground">Horário de Comercial</p>
                     <p className="text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   className="bg-white text-accent-blue hover:bg-white/90 border-white"
-                  onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                  onClick={() => window.open('https://wa.me/5511971535470', '_blank')}
                 >
                   Chamar no WhatsApp
                 </Button>
