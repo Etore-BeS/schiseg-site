@@ -16,10 +16,30 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* WhatsApp CTA - Destacado */}
+          <Card className="shadow-card bg-gradient-to-r from-accent-blue to-primary text-white">
+            <CardContent className="p-12 text-center">
+              <span className="text-6xl mb-8 block">💬</span>
+              <h3 className="text-3xl font-bold mb-6">Solicite sua Proposta</h3>
+              <p className="mb-8 text-white/90 text-xl max-w-3xl mx-auto">
+                Fale conosco agora mesmo pelo WhatsApp para solicitar sua proposta personalizada
+              </p>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="bg-white text-accent-blue hover:bg-white/90 border-white font-semibold text-lg px-8 py-4"
+                onClick={() => window.open('https://wa.me/5511971535470', '_blank')}
+              >
+                Solicitar Proposta no WhatsApp
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Informações em Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information */}
-            <div className="space-y-6 animate-fade-in">
+            <div className="space-y-6">
               {/* Contact Details */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -64,27 +84,8 @@ const ContactSection = () => {
               </Card>
             </div>
 
-            {/* WhatsApp CTA - Destacado */}
-            <div className="space-y-6 animate-fade-in">
-              <Card className="shadow-card bg-gradient-to-r from-accent-blue to-primary text-white">
-                <CardContent className="p-8 text-center">
-                  <span className="text-5xl mb-6 block">💬</span>
-                  <h3 className="text-2xl font-bold mb-4">Solicite sua Proposta</h3>
-                  <p className="mb-6 text-white/90 text-lg">
-                    Fale conosco agora mesmo pelo WhatsApp para solicitar sua proposta personalizada
-                  </p>
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="bg-white text-accent-blue hover:bg-white/90 border-white font-semibold"
-                    onClick={() => window.open('https://wa.me/5511971535470', '_blank')}
-                  >
-                    Solicitar Proposta no WhatsApp
-                  </Button>
-                </CardContent>
-              </Card>
-
-              {/* Trust Indicators */}
+            {/* Trust Indicators */}
+            <div className="space-y-6">
               <Card className="shadow-card">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-lg font-bold text-foreground mb-4">Nossos Diferenciais</h3>
