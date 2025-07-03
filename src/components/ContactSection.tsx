@@ -20,7 +20,11 @@ const ContactSection = () => {
           {/* WhatsApp CTA - Destacado */}
           <Card className="shadow-card bg-gradient-to-r from-accent-blue to-primary text-white">
             <CardContent className="p-12 text-center">
-              <span className="text-6xl mb-8 block">💬</span>
+              <img 
+                src="/lovable-uploads/5897e80b-ad2b-4088-b1aa-a21bd7f4d0a8.png" 
+                alt="WhatsApp" 
+                className="w-16 h-16 mx-auto mb-8 filter brightness-0 invert"
+              />
               <h3 className="text-3xl font-bold mb-6">Solicite sua Proposta</h3>
               <p className="mb-8 text-white/90 text-xl max-w-3xl mx-auto">
                 Fale conosco agora mesmo pelo WhatsApp para solicitar sua proposta personalizada
