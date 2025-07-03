@@ -122,7 +122,7 @@ const ContactSection = () => {
                 <div className="flex items-start space-x-3">
                   <span className="text-xl">🕐</span>
                   <div>
-                    <p className="font-medium text-foreground">Horário de Comercial</p>
+                    <p className="font-medium text-foreground">Horário Comercial</p>
                     <p className="text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
                   </div>
                 </div>
