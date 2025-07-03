@@ -45,18 +45,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Serviços</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="/proposta" className="hover:text-white transition-colors">Solicitar Proposta</a></li>
-              <li><a href="/sinistro" className="hover:text-white transition-colors">Comunicar Sinistro</a></li>
-              <li><a href="/boletim" className="hover:text-white transition-colors">Boletim Online</a></li>
-              <li><a href="/informacoes" className="hover:text-white transition-colors">Informações Úteis</a></li>
-              <li><a href="/noticias" className="hover:text-white transition-colors">Notícias</a></li>
-            </ul>
-          </div>
-
           {/* Contact & Social */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contato</h3>
