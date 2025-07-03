@@ -41,7 +41,7 @@ const Footer = () => {
               <li><a href="/produtos/residencial" className="hover:text-white transition-colors">Seguro Residencial</a></li>
               <li><a href="/produtos/empresarial" className="hover:text-white transition-colors">Seguro Empresarial</a></li>
               <li><a href="/produtos/saude" className="hover:text-white transition-colors">Saúde e Odonto</a></li>
-              <li><a href="/produtos" className="hover:text-white transition-colors">Ver todos</a></li>
+              <li><a href="/produtos/moto" className="hover:text-white transition-colors">Seguro de Moto</a></li>
             </ul>
           </div>
 
