@@ -36,12 +36,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Produtos</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="/produtos/veiculos" className="hover:text-white transition-colors">Seguro de Veículos</a></li>
+              <li><a href="/produtos/agronegocio" className="hover:text-white transition-colors">Seguro Agronegócio</a></li>
               <li><a href="/produtos/vida" className="hover:text-white transition-colors">Seguro de Vida</a></li>
-              <li><a href="/produtos/residencial" className="hover:text-white transition-colors">Seguro Residencial</a></li>
               <li><a href="/produtos/empresarial" className="hover:text-white transition-colors">Seguro Empresarial</a></li>
               <li><a href="/produtos/saude" className="hover:text-white transition-colors">Saúde e Odonto</a></li>
-              <li><a href="/produtos/moto" className="hover:text-white transition-colors">Seguro de Moto</a></li>
             </ul>
           </div>
 
