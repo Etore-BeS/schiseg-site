@@ -57,16 +57,9 @@ const AboutSection = () => {
               "A nossa transparência e a sua segurança".
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center">
               <Button 
                 variant="trust" 
-                size="lg"
-                onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Nossa História
-              </Button>
-              <Button 
-                variant="outline" 
                 size="lg"
                 onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
               >
