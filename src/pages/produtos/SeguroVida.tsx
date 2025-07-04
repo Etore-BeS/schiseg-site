@@ -36,7 +36,7 @@ const SeguroVida = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/3d879e67-7a71-48e2-9188-df5ff1dac320.png" 
+                src="/lovable-uploads/b2808d96-73c8-4b63-9fd7-78df4958ccf6.png" 
                 alt="Seguro de Vida" 
                 className="max-w-full h-auto rounded-lg shadow-xl"
               />
