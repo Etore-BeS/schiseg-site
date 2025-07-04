@@ -258,24 +258,20 @@ const AboutSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-primary rounded-2xl p-8 text-white text-center shadow-hero">
-          <h3 className="text-2xl lg:text-3xl font-bold mb-8">Nossa Credibilidade em Números</h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-white/90">Anos no Mercado</div>
+        <div className="mt-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl p-12 text-white text-center shadow-hero border border-white/10">
+          <h3 className="text-3xl lg:text-4xl font-bold mb-12 text-white drop-shadow-md">Nossa Credibilidade em Números</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="animate-fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105" style={{ animationDelay: '0.1s' }}>
+              <div className="text-5xl lg:text-6xl font-bold mb-3 text-accent-blue drop-shadow-lg">15+</div>
+              <div className="text-white text-lg font-medium">Anos de Experiência</div>
             </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold mb-2">SUSEP</div>
-              <div className="text-white/90">Registrada - 10551236</div>
+            <div className="animate-fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105" style={{ animationDelay: '0.2s' }}>
+              <div className="text-4xl lg:text-5xl font-bold mb-3 text-accent-blue drop-shadow-lg">SUSEP</div>
+              <div className="text-white text-lg font-medium">Registrada e Regulamentada</div>
             </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-white/90">Transparência</div>
-            </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-white/90">Atendimento</div>
+            <div className="animate-fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105" style={{ animationDelay: '0.3s' }}>
+              <div className="text-5xl lg:text-6xl font-bold mb-3 text-accent-blue drop-shadow-lg">24/7</div>
+              <div className="text-white text-lg font-medium">Atendimento Personalizado</div>
             </div>
           </div>
         </div>
