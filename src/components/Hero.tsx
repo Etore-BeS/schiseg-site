@@ -46,18 +46,18 @@ const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">15+</div>
-              <div className="text-white/80">Anos de Experiência</div>
+              <div className="text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">15+</div>
+              <div className="text-white/80 text-lg">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">SUSEP</div>
-              <div className="text-white/80">Registrada e Regulamentada</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">SUSEP</div>
+              <div className="text-white/80 text-lg">Registrada e Regulamentada</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">24/7</div>
-              <div className="text-white/80">Atendimento Personalizado</div>
+              <div className="text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">24/7</div>
+              <div className="text-white/80 text-lg">Atendimento Personalizado</div>
             </div>
           </div>
         </div>
