@@ -148,6 +148,12 @@ const ProductsSection = () => {
                   >
                     Simule e Contrate
                   </Button>
+                ) : product.title === "Agronegócios" ? (
+                  <Link to="/produtos/agronegocio">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      Saiba Mais
+                    </Button>
+                  </Link>
                 ) : product.title === "Seguro de Vida e Família" ? (
                   <Link to="/produtos/vida">
                     <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
