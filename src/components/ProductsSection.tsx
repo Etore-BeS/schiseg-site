@@ -5,24 +5,42 @@ import { Link } from "react-router-dom";
 const ProductsSection = () => {
   const productCategories = [
     {
+      title: "Seguro Auto",
+      description: "Proteção completa para todos os tipos de veículos",
+      icon: "🚗",
+      products: ["Auto Empresarial", "Premium", "Táxi", "Jovem", "Mulher", "Sênior", "Caminhão"],
+      color: "bg-blue-50 border-blue-200",
+      link: "http://www.porto.vc/SEGUROAUTO_55123J_1fee935cdd16490cb570a6e120282a9a_WHATSAPP"
+    },
+    {
+      title: "Seguro Viagem",
+      description: "Proteção completa para suas viagens nacionais e internacionais",
+      icon: "✈️",
+      products: ["Nacional", "Internacional", "Europa", "América do Norte", "Ásia", "Múltiplas Viagens", "Estudante"],
+      color: "bg-sky-50 border-sky-200",
+      link: "http://www.porto.vc/VIAGEM_55123J_6056255db0f3492c95d78c5fdc5b7407_WHATSAPP"
+    },
+    {
+      title: "Seguro Residencial",
+      description: "Proteja seu lar e patrimônio com tranquilidade",
+      icon: "🏠",
+      products: ["Apartamentos", "Condomínio", "Residencial Habitual", "Premium", "Veraneio", "Fácil"],
+      color: "bg-purple-50 border-purple-200",
+      link: "http://www.porto.vc/RESIDENCIAESSENCIAL_55123J_cc555dd878a64473a4346fad930911d9_WHATSAPP"
+    },
+    {
+      title: "Seguro Equipamento Portátil",
+      description: "Proteção para seus dispositivos móveis e eletrônicos",
+      icon: "📱",
+      products: ["Câmera", "Filmadora", "Notebook", "Celular", "Tablet"],
+      color: "bg-cyan-50 border-cyan-200",
+      link: "http://www.porto.vc/EQUIPAMENTOSPORTATEIS_55123J_3e6a1329dcf443df866cc83a82aabebc_WHATSAPP"
+    },
+    {
       title: "Agronegócios",
       description: "Proteção para produtores rurais e atividades agropecuárias",
       icon: "🌾",
       products: ["Seguro Grãos", "Horta", "Pomar"],
-      color: "bg-blue-50 border-blue-200"
-    },
-    {
-      title: "Seguro de Viagem",
-      description: "Proteção completa para suas viagens nacionais e internacionais",
-      icon: "✈️",
-      products: ["Nacional", "Internacional", "Europa", "América do Norte", "Ásia", "Múltiplas Viagens", "Estudante"],
-      color: "bg-sky-50 border-sky-200"
-    },
-    {
-      title: "Seguro de Veículos",
-      description: "Proteção completa para todos os tipos de veículos",
-      icon: "🚗",
-      products: ["Auto Empresarial", "Premium", "Táxi", "Jovem", "Mulher", "Sênior", "Caminhão"],
       color: "bg-blue-50 border-blue-200"
     },
     {
@@ -31,13 +49,6 @@ const ProductsSection = () => {
       icon: "👨‍👩‍👧‍👦",
       products: ["Vida", "Vida em Grupo", "Vida Individual", "Vida Mais Mulher", "Vida Empresarial"],
       color: "bg-indigo-50 border-indigo-200"
-    },
-    {
-      title: "Seguro para Imóveis",
-      description: "Proteja seu lar e patrimônio com tranquilidade",
-      icon: "🏠",
-      products: ["Apartamentos", "Condomínio", "Residencial Habitual", "Premium", "Veraneio", "Fácil"],
-      color: "bg-purple-50 border-purple-200"
     },
     {
       title: "Seguros Empresariais",
@@ -52,13 +63,6 @@ const ProductsSection = () => {
       icon: "🏥",
       products: ["Saúde Ocupacional", "Odontológico", "Saúde"],
       color: "bg-red-50 border-red-200"
-    },
-    {
-      title: "Equipamentos Portáteis",
-      description: "Proteção para seus dispositivos móveis e eletrônicos",
-      icon: "📱",
-      products: ["Câmera", "Filmadora", "Notebook", "Celular", "Tablet"],
-      color: "bg-cyan-50 border-cyan-200"
     },
     {
       title: "Previdência",
@@ -136,20 +140,16 @@ const ProductsSection = () => {
                     </div>
                   )}
                 </div>
-                {product.title === "Seguro de Veículos" ? (
-                  <Link to="/produtos/veiculos">
-                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      Saiba Mais
-                    </Button>
-                  </Link>
+                {product.link ? (
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
+                    onClick={() => window.open(product.link, '_blank')}
+                  >
+                    Simule e Contrate
+                  </Button>
                 ) : product.title === "Seguro de Vida e Família" ? (
                   <Link to="/produtos/vida">
-                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      Saiba Mais
-                    </Button>
-                  </Link>
-                ) : product.title === "Seguro para Imóveis" ? (
-                  <Link to="/produtos/residencial">
                     <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                       Saiba Mais
                     </Button>
