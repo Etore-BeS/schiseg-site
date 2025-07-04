@@ -36,7 +36,7 @@ const SeguroEmpresarial = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/be7e2a2d-4908-464e-8298-a9da4ef324f8.png" 
+                src="/lovable-uploads/11fa4d08-9006-4669-b372-f7ab62ab3845.png" 
                 alt="Seguro Empresarial" 
                 className="max-w-full h-auto rounded-lg shadow-xl"
               />
