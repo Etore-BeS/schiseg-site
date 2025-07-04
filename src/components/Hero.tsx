@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur-sm mb-6 animate-fade-in">
-            <span className="text-white/90">Mais de 15 anos de experiência • SUSEP nº 05062610551236</span>
+            <span className="text-white/90">Mais de 20 anos de experiência • SUSEP nº 05062610551236</span>
             <div className="ml-2 h-2 w-2 rounded-full bg-primary-light"></div>
           </div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Há mais de 15 anos protegendo você, sua família e seu negócio com assessoria personalizada e total transparência.
+            Há mais de 20 anos protegendo você, sua família e seu negócio com assessoria personalizada e total transparência.
           </p>
 
           {/* CTA Buttons */}
@@ -48,7 +48,7 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="text-center">
-              <div className="text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">15+</div>
+              <div className="text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">20+</div>
               <div className="text-white/80 text-lg">Anos de Experiência</div>
             </div>
             <div className="text-center">

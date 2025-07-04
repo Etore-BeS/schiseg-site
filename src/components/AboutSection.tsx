@@ -27,7 +27,7 @@ const AboutSection = () => {
     {
       icon: excellenceImage,
       title: "Excelência",
-      description: "Mais de 15 anos de experiência oferecendo as melhores soluções em seguros"
+      description: "Mais de 20 anos de experiência oferecendo as melhores soluções em seguros"
     }
   ];
 
@@ -42,12 +42,12 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-              Mais de 15 anos protegendo o que importa para você
+              Mais de 20 anos protegendo o que importa para você
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               A SCHISEG Assessoria Corretora de Seguros Ltda, registrada e habilitada pela 
-              SUSEP sob nº 10551236, atua há mais de 15 anos no mercado de seguros, 
+              SUSEP sob nº 10551236, atua há mais de 20 anos no mercado de seguros, 
               oferecendo assessoria e consultoria personalizada para pessoas e empresas.
             </p>
             
@@ -262,7 +262,7 @@ const AboutSection = () => {
           <h3 className="text-3xl lg:text-4xl font-bold mb-12 text-white drop-shadow-md">Nossa Credibilidade em Números</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="animate-fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105" style={{ animationDelay: '0.1s' }}>
-              <div className="text-5xl lg:text-6xl font-bold mb-3 text-white drop-shadow-lg">15+</div>
+              <div className="text-5xl lg:text-6xl font-bold mb-3 text-white drop-shadow-lg">20+</div>
               <div className="text-white text-lg font-medium">Anos de Experiência</div>
             </div>
             <div className="animate-fade-in bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105" style={{ animationDelay: '0.2s' }}>
