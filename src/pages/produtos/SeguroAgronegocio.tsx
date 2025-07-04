@@ -36,7 +36,7 @@ const SeguroAgronegocio = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/1bd68f93-9294-42e4-90cb-98309d81b60c.png" 
+                src="/lovable-uploads/72cc73c7-93e1-4349-983d-22a052628bd1.png" 
                 alt="Seguro Agronegócio" 
                 className="max-w-full h-auto rounded-lg shadow-xl"
               />
