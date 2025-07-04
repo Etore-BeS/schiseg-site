@@ -178,7 +178,10 @@ const ProductsSection = () => {
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
                     onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Simule e Contrate
+                    {product.title === "Previdência" || 
+                     product.title === "Seguro Aluguel" || 
+                     product.title === "Soluções Financeiras" || 
+                     product.title === "Transportes" ? "Solicite um Orçamento" : "Simule e Contrate"}
                   </Button>
                 )}
               </CardContent>
