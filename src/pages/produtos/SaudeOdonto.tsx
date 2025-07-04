@@ -36,7 +36,7 @@ const SaudeOdonto = () => {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/dcb8956f-8aa1-4c86-84d5-732cd52c3751.png" 
+                src="/lovable-uploads/4b7e66bc-9061-4d50-a787-212d4649d703.png" 
                 alt="Saúde e Odontológico" 
                 className="max-w-full h-auto rounded-lg shadow-xl"
               />
