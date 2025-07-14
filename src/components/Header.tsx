@@ -18,9 +18,9 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/53da31b1-0bb0-4a6e-8c5c-e32a98977e33.png" 
+            src="/lovable-uploads/b087fb88-8490-4ef6-b6a8-e2a650b77bc2.png" 
             alt="SCHISEG Logo" 
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
           <div className="hidden sm:flex flex-col">
             <span className="text-sm font-medium text-muted-foreground">Assessoria Corretora de Seguros</span>
