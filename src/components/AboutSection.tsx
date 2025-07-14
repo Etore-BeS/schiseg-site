@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+
 import transparencyImage from "@/assets/transparency.jpg";
 import ethicsImage from "@/assets/ethics.jpg";
 import customerFocusImage from "@/assets/customer-focus.jpg";
@@ -101,11 +101,6 @@ const AboutSection = () => {
           <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-foreground">Nossa Galeria</h3>
           <Carousel 
             className="w-full max-w-4xl mx-auto"
-            plugins={[
-              Autoplay({
-                delay: 4000,
-              })
-            ]}
           >
             <CarouselContent>
               <CarouselItem>
